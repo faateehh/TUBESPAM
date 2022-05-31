@@ -6,7 +6,7 @@ Nama Anggota :
 - Adam Taufiqurrahman           118140065
 - Muhammad Nadhif Athalla       119140209
 - Muhammad Fariz Luthfi         119140199
-- Muhammad Faatih Rizal AUliya  119140212
+- Muhammad Faatih Rizal Auliya  119140212
 
 ### Fungsi Aplikasi
 Terdapat banyak sekali oleh-oleh berupa makanan khas Lampung berupa makanan yang wajib dicicipi ketika berkunjung ke lampung, seperti tempoyak, sambal, kemplang, kue engkak, keripik pisang, pie pisang, kopi, dan lain lain.
