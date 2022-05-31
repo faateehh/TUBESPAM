@@ -22,6 +22,9 @@ Berikut ini adalah tampilan dari halaman detail :
 
 ![img 3](screenshot/3.PNG)
 
+### Sumber Data
+Sumber data aplikasi ini adalah API yang berisi data oleh-oleh di LampungFood yang dibentuk sendiri. Dokumentasinya bisa dilihat pada link berikut : https://api-pam.herokuapp.com/
+
 ### Petunjuk Penggunaan
 Berikut adalah cara untuk menggunakan aplikasi LampungFood :
 1.	Mendownload file .apk pada link berikut : https://drive.google.com/file/d/1BvtXdMLVVRMEFoVHB9E1uUWTcLGDI3SM/view?usp=sharing 
@@ -34,22 +37,23 @@ Berikut adalah cara untuk menggunakan aplikasi LampungFood :
 8.	Selamat menikmati dan mohon maaf apabila terdapat ketidaksempurnaan dalam pengembangan aplikasi
 
 List Dependecies :
-"@expo/webpack-config": "~0.16.2",
-    "@react-native-community/masked-view": "^0.1.11",
-    "@react-navigation/bottom-tabs": "^6.3.1",
-    "@react-navigation/material-bottom-tabs": "^6.2.1",
-    "@react-navigation/native": "^6.0.10",
-    "@react-navigation/stack": "^6.2.1",
-    "expo": "~45.0.0",
-    "expo-status-bar": "~1.3.0",
-    "expo-updates": "~0.13.1",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-native": "0.68.2",
-    "react-native-gesture-handler": "^2.2.1",
-    "react-native-reanimated": "^2.8.0",
-    "react-native-safe-area-context": "^4.2.4",
-    "react-native-screens": "^3.11.1",
-    "react-native-vector-icons": "^9.1.0",
-    "react-native-web": "0.17.7",
-    "webpack-dev-server": "~3.11.0"
+- "@expo/webpack-config": "~0.16.2",
+- "@react-native-community/masked-view": "^0.1.11",
+- "@react-navigation/bottom-tabs": "^6.3.1",
+- "@react-navigation/material-bottom-tabs": "^6.2.1",
+- "@react-navigation/native": "^6.0.10",
+- "@react-navigation/stack": "^6.2.1",
+- "expo": "~45.0.0",
+- "expo-status-bar": "~1.3.0",
+- "expo-updates": "~0.13.1",
+- "react": "17.0.2",
+- "react-dom": "17.0.2",
+- "react-native": "0.68.2",
+- "react-native-gesture-handler": "^2.2.1",
+- "react-native-reanimated": "^2.8.0",
+- "react-native-safe-area-context": "^4.2.4",
+- "react-native-screens": "^3.11.1",
+- "react-native-vector-icons": "^9.1.0",
+- "react-native-web": "0.17.7",
+- "webpack-dev-server": "~3.11.0"
+
