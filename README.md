@@ -7,10 +7,4 @@ Berikut merupakan tampilan halaman utama dari website LampungFood :
 
 ![img 1](screenshot/1.PNG)
 
-Pada halaman ini terdapat daftar produk beserta harganya. Terdapat juga tombol detail yang apa bila di klik maka akan muncul tampilan yang mendeskripsikan makanan tersebut, harganya, dan juga dimana kita bisa mendapatkan makanan tersebut beserta kontak yang dapat dihubunginya.
-
-Berikut ini adalah tampilan dari halaman detail :
-
-
-
 ### `Petunjuk penggunaan`
