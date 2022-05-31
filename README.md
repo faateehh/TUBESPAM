@@ -5,6 +5,6 @@ Manfaat dari adanya website ini yaitu memudahkan pendatang dari luar Lampung unt
 
 Berikut merupakan tampilan dari website LampungFood
 
-
+![img 1](screenshot/1.PNG)
 
 ### `Petunjuk penggunaan`
