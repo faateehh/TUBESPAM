@@ -1,0 +1,26 @@
+{
+  "name": "api_tubes_pam",
+  "version": "1.0.0",
+  "description": "ini api untuk tubes pam ",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Nadhip",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-validator": "^6.14.1",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.20.0",
+    "swagger-ui-express": "^4.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

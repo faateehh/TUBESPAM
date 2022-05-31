@@ -1,0 +1,477 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Di dalam dokumentasi Api ini berisi Endpoint-enpoint yang ada pada api ini. Serta contoh response dan request bodynya.",
+    "version": "1.0.0",
+    "title": "API PAM"
+  },
+  "host": "api-pam.herokuapp.com",
+  "basePath": "/api",
+  "tags": [
+    {
+      "name": "PRODUK",
+      "description": "Berisi kurang lebih CRUD dari Produk"
+    }
+  ],
+  "paths": {
+    "/get_all_produk": {
+      "get": {
+        "tags": [
+          "PRODUK"
+        ],
+        "summary": "List all players",
+        "description": "List all Players Data",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success get Players data",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "result": {
+                  "type": "string",
+                  "example": "Success"
+                },
+                "message": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "integer",
+                        "example": 1
+                      },
+                      "username": {
+                        "type": "string",
+                        "example": "Lorem Ipsum"
+                      },
+                      "email": {
+                        "type": "string",
+                        "example": "Lorem@mail"
+                      },
+                      "password": {
+                        "type": "string",
+                        "example": "Dolor sit amet"
+                      },
+                      "experience": {
+                        "type": "string",
+                        "example": 100
+                      },
+                      "lvl": {
+                        "type": "string",
+                        "example": 12
+                      },
+                      "createdAt": {
+                        "type": "string",
+                        "example": "2021-10-21T08:22:08.157Z"
+                      },
+                      "updatedAt": {
+                        "type": "string",
+                        "example": "2021-10-21T08:22:08.157Z"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Failed to create new player data",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string",
+                  "example": "Some error occurred while retrieving players."
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "PRODUK"
+        ],
+        "summary": "Add new Player",
+        "description": "Create new Player",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Player object",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "username": {
+                  "type": "string",
+                  "example": "Lorem ipsum"
+                },
+                "password": {
+                  "type": "string",
+                  "example": "Dolor sit amet"
+                },
+                "email": {
+                  "type": "string",
+                  "example": "asd@gmail.com"
+                },
+                "experience": {
+                  "type": "integer",
+                  "example": 1
+                },
+                "lvl": {
+                  "type": "integer",
+                  "example": 2
+                }
+              }
+            }
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "201": {
+            "description": "Succesfully create new player",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "result": {
+                  "type": "string",
+                  "example": "SUCCESS"
+                },
+                "message": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer",
+                      "example": 1
+                    },
+                    "username": {
+                      "type": "string",
+                      "example": "Lorem Ipsum"
+                    },
+                    "email": {
+                      "type": "string",
+                      "example": "Lorem@mail"
+                    },
+                    "password": {
+                      "type": "string",
+                      "example": "Dolor sit amet"
+                    },
+                    "experience": {
+                      "type": "string",
+                      "example": 100
+                    },
+                    "lvl": {
+                      "type": "string",
+                      "example": 12
+                    },
+                    "createdAt": {
+                      "type": "string",
+                      "example": "2021-10-21T08:22:08.157Z"
+                    },
+                    "updatedAt": {
+                      "type": "string",
+                      "example": "2021-10-21T08:22:08.157Z"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Field empty",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "result": {
+                  "type": "string",
+                  "example": "FAILED"
+                },
+                "message": {
+                  "type": "string",
+                  "example": "username or email or password field cannot be empty."
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Failed to create new player",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "result": {
+                  "type": "string",
+                  "example": "FAILED"
+                },
+                "message": {
+                  "type": "string",
+                  "example": "Some error occurred while creating the Player."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/players/{id}": {
+      "get": {
+        "tags": [
+          "PRODUK"
+        ],
+        "summary": "Get a User by ID",
+        "description": "Find by Id",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "type": "integer",
+            "required": true,
+            "description": "userId"
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "result": {
+                  "type": "string",
+                  "example": "SUCCESS"
+                },
+                "message": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer",
+                      "example": 1
+                    },
+                    "username": {
+                      "type": "string",
+                      "example": "Lorem Ipsum"
+                    },
+                    "password": {
+                      "type": "string",
+                      "example": "Dolor sit amet"
+                    },
+                    "experience": {
+                      "type": "integer",
+                      "example": 100
+                    },
+                    "lvl": {
+                      "type": "integer",
+                      "example": 2
+                    },
+                    "createdAt": {
+                      "type": "string",
+                      "example": "2021-10-21T08:22:08.157Z"
+                    },
+                    "updatedAt": {
+                      "type": "string",
+                      "example": "2021-10-21T08:22:08.157Z"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Failed to create new article",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "result": {
+                  "type": "string",
+                  "example": "FAILED"
+                },
+                "message": {
+                  "type": "string",
+                  "example": "Error retrieving Player with id=1"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "PRODUK"
+        ],
+        "summary": "Update a User by ID",
+        "description": "Update a User by ID",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "type": "integer",
+            "required": true,
+            "description": "userId"
+          },
+          {
+            "in": "body",
+            "name": "req.body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "username": {
+                  "type": "string",
+                  "example": "Lorem ipsum"
+                },
+                "password": {
+                  "type": "string",
+                  "example": "Dolor sit amet"
+                },
+                "email": {
+                  "type": "string",
+                  "example": "asd@gmail.com"
+                },
+                "experience": {
+                  "type": "integer",
+                  "example": 1
+                },
+                "lvl": {
+                  "type": "integer",
+                  "example": 2
+                }
+              }
+            }
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "result": {
+                  "type": "string",
+                  "example": "Success"
+                },
+                "message": {
+                  "type": "string",
+                  "example": "Player was updated successfully."
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Failed to create new article",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "result": {
+                  "type": "string",
+                  "example": "FAILED"
+                },
+                "message": {
+                  "type": "string",
+                  "example": "Cannot update Player with id=1"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Failed to create new article",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "result": {
+                  "type": "string",
+                  "example": "FAILED"
+                },
+                "message": {
+                  "type": "string",
+                  "example": "Error updating Player with id=1"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "PRODUK"
+        ],
+        "summary": "DELETE Player by ID",
+        "description": "Delete Player by ID",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "type": "integer",
+            "required": true,
+            "description": "userId"
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "result": {
+                  "type": "string",
+                  "example": "SUCCESS"
+                },
+                "message": {
+                  "type": "string",
+                  "example": "Player was delete successfully."
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Failed to create new article",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "result": {
+                  "type": "string",
+                  "example": "FAILED"
+                },
+                "message": {
+                  "type": "string",
+                  "example": "Cannot delete Player with id=1. Maybe Player was not found!"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Failed to create new article",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "result": {
+                  "type": "string",
+                  "example": "FAILED"
+                },
+                "message": {
+                  "type": "string",
+                  "example": "Could not delete Player with id=1"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
