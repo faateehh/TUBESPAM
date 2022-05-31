@@ -23,3 +23,9 @@ Berikut ini adalah tampilan dari halaman detail :
 ![img 3](screenshot/3.PNG)
 
 ### Petunjuk Penggunaan
+Berikut adalah cara untuk menggunakan aplikasi LampungFood
+1. Instal aplikasi LampungFood di Play store (untuk pengguna Android) atau App store (untuk pengguna IOS)
+2. Setelah instalasi selesai buka aplikasi LampungFood pada perangkat anda
+3. Setelah masuk  ke aplikasi anda bisa melihat lihat oleh" apa yang ingin anda cari
+4. Anda bisa klik detail untuk detaill informasi dari produk tersebut
+5. Lalu di bagian detail juga terdapat harga dari produk tersebut serta kontak sosial media yang bisa dihubungi untuk mendapatkan produk tersebut
